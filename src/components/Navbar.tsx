@@ -8,7 +8,7 @@ export function Navbar() {
       <div className="section-shell flex min-h-16 items-center justify-between gap-4">
         <Link href="/" className="flex items-center gap-3">
           <span className="grid h-10 w-10 overflow-hidden rounded-2xl bg-white shadow-soft">
-            <Image src="/simi/brand_app_icons/SIMI_icono.svg" alt="SIMI" width={40} height={40} />
+            <Image src="/simi/brand_app_icons/simi-app-icon.png" alt="SIMI" width={40} height={40} />
           </span>
           <span>
             <Image src="/simi/brand_app_icons/SIMI_logo_TRANSPARENTE.svg" alt="SIMI" width={74} height={22} className="h-[22px] w-auto dark:brightness-110" />

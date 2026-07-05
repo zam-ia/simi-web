@@ -6,21 +6,25 @@ export const metadata: Metadata = {
   title: "SIMI | Carta digital para negocios gastronomicos",
   description: "Tu carta digital lista en 48 horas para recibir pedidos por WhatsApp sin reenviar menus ni cambiar tu QR.",
   icons: {
-    icon: "/simi/brand_app_icons/SIMI_icono.svg",
-    apple: "/simi/previews/preview_app_icon.png"
+    icon: [
+      { url: "/simi/brand_app_icons/simi-favicon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/simi/brand_app_icons/simi-favicon-192.png", sizes: "192x192", type: "image/png" }
+    ],
+    shortcut: "/simi/brand_app_icons/simi-favicon-32.png",
+    apple: "/simi/brand_app_icons/simi-apple-touch-icon.png"
   },
   openGraph: {
     title: "SIMI | Carta digital, pedidos y reservas",
     description: "Una carta moderna con QR permanente, pedidos por WhatsApp y panel de control para tu negocio.",
     siteName: "SIMI",
     type: "website",
-    images: [{ url: "/simi/previews/simi-share-preview.png", width: 1200, height: 630, alt: "SIMI landing preview" }]
+    images: [{ url: "/simi/brand_app_icons/simi-og-image.png", width: 1200, height: 630, alt: "SIMI - Carta digital, pedidos y reservas" }]
   },
   twitter: {
     card: "summary_large_image",
     title: "SIMI | Carta digital, pedidos y reservas",
     description: "Tu carta digital lista en 48 horas para recibir pedidos por WhatsApp.",
-    images: ["/simi/previews/simi-share-preview.png"]
+    images: ["/simi/brand_app_icons/simi-og-image.png"]
   }
 };
 

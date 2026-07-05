@@ -9,7 +9,7 @@ export function Hero() {
     <section className="section-shell grid gap-10 pb-16 pt-12 lg:grid-cols-[0.88fr_1.12fr] lg:items-center lg:pb-24 lg:pt-20">
       <div className="reveal">
         <div className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-2 text-sm text-foreground/72 shadow-soft">
-          <Image src="/simi/brand_app_icons/SIMI_icono.svg" alt="" width={22} height={22} className="rounded-md" />
+          <Image src="/simi/brand_app_icons/simi-app-icon.png" alt="" width={22} height={22} className="rounded-md" />
           Tu carta digital lista en 48 horas
         </div>
         <h1 className="mt-6 max-w-3xl text-5xl font-medium leading-[0.98] tracking-[-0.02em] md:text-7xl">

@@ -16,7 +16,7 @@ export function Rubros() {
         {items.map(({ name, text, icon: Icon }) => (
           <article key={name} className="group overflow-hidden rounded-[30px] border border-border bg-card p-5 shadow-soft transition hover:-translate-y-1">
             <div className="relative grid aspect-[4/3] place-items-center overflow-hidden rounded-[24px] bg-gradient-to-br from-white to-orange-100 dark:from-muted dark:to-neutral-900">
-              <Image src="/simi/brand_app_icons/SIMI_icono.svg" alt="" width={42} height={42} className="absolute left-4 top-4 rounded-xl shadow-soft" />
+              <Image src="/simi/brand_app_icons/simi-app-icon.png" alt="" width={42} height={42} className="absolute left-4 top-4 rounded-xl shadow-soft" />
               <span className="grid h-16 w-16 place-items-center rounded-2xl bg-white/82 text-primary shadow-soft dark:bg-white/10">
                 <Icon className="h-8 w-8" />
               </span>
