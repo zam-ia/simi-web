@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #fff8f5;
+  --foreground: #1d1d1f;
+  --muted: #f4eee9;
+  --border: rgba(29, 29, 31, 0.10);
+  --card: rgba(255, 255, 255, 0.84);
+  --primary: #ff5a1f;
+  --primary-strong: #c62828;
+  --success: #20b26b;
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  --background: #111113;
+  --foreground: #f5f5f7;
+  --muted: #1c1c1e;
+  --border: rgba(255, 255, 255, 0.12);
+  --card: rgba(28, 28, 30, 0.84);
+  --primary: #ff6a2a;
+  --primary-strong: #ff8a3d;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at 15% 0%, rgba(255, 90, 31, 0.18), transparent 34rem),
+    radial-gradient(circle at 86% 12%, rgba(255, 193, 7, 0.14), transparent 30rem),
+    var(--background);
+  color: var(--foreground);
+  font-family: -apple-system, BlinkMacSystemFont, Inter, "Segoe UI", sans-serif;
+  font-weight: 400;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+.section-shell {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.glass {
+  border: 1px solid var(--border);
+  background: var(--card);
+  backdrop-filter: blur(22px);
+}
+
+.simi-gradient {
+  background: linear-gradient(135deg, #ff2d1f, #ff7a1a 52%, #ffc107);
+}
+
+.shadow-float {
+  box-shadow: 0 24px 75px rgba(255, 90, 31, 0.24);
+}
+
+.chip {
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: color-mix(in srgb, var(--card) 78%, white 22%);
+  padding: 0.45rem 0.75rem;
+  font-size: 0.78rem;
+  color: color-mix(in srgb, var(--foreground) 72%, transparent);
+}
+
+.reveal {
+  animation: reveal 700ms ease-out both;
+}
+
+.float-soft {
+  animation: float-soft 5s ease-in-out infinite;
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float-soft {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    scroll-behavior: auto !important;
+  }
+}
