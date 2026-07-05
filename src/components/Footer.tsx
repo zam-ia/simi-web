@@ -6,8 +6,7 @@ export function Footer() {
       <div className="section-shell flex flex-col gap-4 text-sm text-foreground/62 md:flex-row md:items-center md:justify-between">
         <div className="flex items-center gap-3">
           <Image src="/simi/brand_app_icons/simi-app-icon.png" alt="SIMI" width={34} height={34} className="rounded-xl" />
-          <Image src="/simi/brand_app_icons/SIMI_logo_TRANSPARENTE.svg" alt="SIMI" width={74} height={22} className="h-[22px] w-auto dark:brightness-110" />
-          <span>SIMI - Carta digital, pedidos y reservas para negocios gastronomicos.</span>
+          <span><span className="font-medium text-foreground">SIMI</span> - Carta digital, pedidos y reservas para negocios gastronomicos.</span>
         </div>
         <a className="font-medium text-foreground" href="#demo">Solicitar demo</a>
       </div>
