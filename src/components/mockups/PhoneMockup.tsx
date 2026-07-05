@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { CartIcon, QrIcon } from "@/components/Icons";
 
 export function PhoneMockup({ className = "" }: { className?: string }) {
@@ -33,7 +34,9 @@ export function PhoneMockup({ className = "" }: { className?: string }) {
                 ["Chaufa de pollo", "Wok con sabor oriental", "S/ 12.00", "Nuevo"]
               ].map(([name, desc, price, tag]) => (
                 <div key={name} className="grid grid-cols-[64px_1fr_auto] items-center gap-3 rounded-2xl bg-white p-3 shadow-[0_12px_30px_rgba(0,0,0,0.06)]">
-                  <div className="grid h-16 w-16 place-items-center rounded-2xl bg-gradient-to-br from-orange-50 to-amber-100 text-2xl">🍗</div>
+                  <div className="grid h-16 w-16 place-items-center overflow-hidden rounded-2xl bg-gradient-to-br from-orange-50 to-amber-100">
+                    <Image src="/simi/brand_app_icons/SIMI_icono.svg" alt="" width={34} height={34} />
+                  </div>
                   <div className="min-w-0">
                     <div className="truncate text-[13px] font-medium">{name}</div>
                     <div className="truncate text-[10px] text-neutral-500">{desc}</div>

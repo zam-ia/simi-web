@@ -11,7 +11,7 @@ export function Navbar() {
             <Image src="/simi/brand_app_icons/SIMI_icono.svg" alt="SIMI" width={40} height={40} />
           </span>
           <span>
-            <span className="block text-sm font-medium">SIMI</span>
+            <Image src="/simi/brand_app_icons/SIMI_logo_TRANSPARENTE.svg" alt="SIMI" width={74} height={22} className="h-[22px] w-auto dark:brightness-110" />
             <span className="hidden text-xs text-foreground/58 sm:block">Carta digital lista en 48h</span>
           </span>
         </Link>
