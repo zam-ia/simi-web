@@ -8,7 +8,7 @@ export function OrderMockup({ className = "" }: { className?: string }) {
           <span className="grid h-10 w-10 place-items-center rounded-2xl bg-primary text-white"><CartIcon className="h-5 w-5" /></span>
           <div>
             <div className="text-sm font-medium">Pedido #263220</div>
-            <div className="text-[11px] text-foreground/52">Cliente: Carlos · Recojo</div>
+            <div className="text-[11px] text-foreground/52">Cliente: Carlos - Recojo</div>
           </div>
         </div>
         <span className="chip">Nuevo</span>

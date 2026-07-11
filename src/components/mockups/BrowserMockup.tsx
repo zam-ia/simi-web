@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
-export function BrowserMockup({ url = "app.simi.pe/panel", children, className }: { url?: string; children: ReactNode; className?: string }) {
+export function BrowserMockup({ url = "simi-peru.vercel.app/admin", children, className }: { url?: string; children: ReactNode; className?: string }) {
   return (
     <div className={cn("overflow-hidden rounded-[28px] border border-border bg-card shadow-elegant", className)}>
       <div className="flex items-center gap-2 border-b border-border bg-muted/70 px-4 py-3">
