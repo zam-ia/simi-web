@@ -2,7 +2,7 @@ import { BrowserMockup } from "@/components/mockups/BrowserMockup";
 
 export function MenuEditorMockup({ className = "" }: { className?: string }) {
   return (
-    <BrowserMockup url="app.simi.pe/panel/carta" className={className}>
+    <BrowserMockup url="simi-peru.vercel.app/admin" className={className}>
       <div className="grid bg-background sm:grid-cols-5">
         <aside className="hidden border-r border-border bg-muted/45 p-4 sm:col-span-2 sm:block">
           <div className="mb-3 flex items-center justify-between">

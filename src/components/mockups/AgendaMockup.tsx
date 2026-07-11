@@ -6,7 +6,7 @@ export function AgendaMockup({ className = "" }: { className?: string }) {
   const dates = Array.from({ length: 35 }, (_, i) => i - 2);
 
   return (
-    <BrowserMockup url="app.simi.pe/reservas" className={className}>
+    <BrowserMockup url="simi-peru.vercel.app/admin/reservations" className={className}>
       <div className="grid bg-background sm:grid-cols-2">
         <div className="border-b border-border p-5 sm:border-b-0 sm:border-r">
           <div className="mb-3 flex items-center justify-between">
@@ -26,7 +26,7 @@ export function AgendaMockup({ className = "" }: { className?: string }) {
           </div>
         </div>
         <div className="p-5">
-          <div className="mb-3 text-sm font-medium">Reservas · viernes 14</div>
+          <div className="mb-3 text-sm font-medium">Reservas - viernes 14</div>
           {[["19:30", "Familia Lopez", "4 personas", true], ["20:00", "Mesa Andres", "2 personas", true], ["20:30", "Torta personalizada", "Entrega", false]].map(([hour, name, people, ok]) => (
             <div key={String(hour)} className="mb-2 flex items-center gap-3 rounded-2xl border border-border bg-card p-3">
               <div className="w-12 text-center">

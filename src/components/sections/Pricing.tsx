@@ -4,7 +4,7 @@ export function Pricing() {
   const plans = [
     ["Basico", "S/ 49", "Carta digital con QR para empezar.", ["QR permanente", "Hasta 30 productos", "1 cambio mensual"]],
     ["Pro", "S/ 99", "Recomendado para negocios con pedidos activos.", ["Productos ilimitados", "Pedidos por WhatsApp", "Cambios ilimitados", "Soporte prioritario"]],
-    ["Premium", "S/ 179", "Para marcas que quieren mas personalizacion.", ["Multi-sede", "Reportes", "Diseno personalizado", "Acompanamiento"]]
+    ["Premium", "S/ 179", "Para marcas que quieren mas personalizacion.", ["Configuracion avanzada", "Dashboard operativo", "Diseno personalizado", "Acompanamiento"]]
   ];
 
   return (

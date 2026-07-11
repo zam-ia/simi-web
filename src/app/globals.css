@@ -79,6 +79,55 @@ textarea {
   color: color-mix(in srgb, var(--foreground) 72%, transparent);
 }
 
+.article-copy {
+  font-size: 1rem;
+  line-height: 1.85;
+  color: color-mix(in srgb, var(--foreground) 78%, transparent);
+}
+
+.article-copy h1,
+.article-copy h2,
+.article-copy h3 {
+  color: var(--foreground);
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.2;
+}
+
+.article-copy h1 {
+  margin: 0 0 1.5rem;
+  font-size: 2.25rem;
+}
+
+.article-copy h2 {
+  margin: 2.5rem 0 0.8rem;
+  font-size: 1.75rem;
+}
+
+.article-copy h3 {
+  margin: 2rem 0 0.7rem;
+  font-size: 1.3rem;
+}
+
+.article-copy p,
+.article-copy ul {
+  margin: 0 0 1.25rem;
+}
+
+.article-copy ul {
+  padding-left: 1.25rem;
+}
+
+.article-copy li + li {
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .article-copy h1 {
+    font-size: 3.5rem;
+  }
+}
+
 .reveal {
   animation: reveal 700ms ease-out both;
 }

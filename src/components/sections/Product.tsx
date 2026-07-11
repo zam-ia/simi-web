@@ -17,7 +17,7 @@ export function Product() {
         <Feature title="Pedidos mas ordenados" text="El cliente arma su pedido desde la carta y tu equipo recibe un resumen claro para mesa, recojo o delivery." visual={<div className="grid gap-4 md:grid-cols-2"><PhoneMockup /><OrderMockup className="self-center" /></div>} reverse />
         <Feature title="QR permanente + link para redes" text="Imprimes el QR una vez y usas el mismo link en Instagram, WhatsApp y Google Maps." visual={<div className="grid gap-4 md:grid-cols-[0.85fr_1.15fr]"><QrCard /><PhoneMockup /></div>} />
         <Feature title="Agenda, reservas y pedidos programados" text="Para restaurantes, pastelerias y catering: organiza reservas, entregas y pedidos por fecha." visual={<AgendaMockup />} reverse />
-        <Feature title="Panel administrativo claro" text="Pedidos activos, ventas del dia, pagos, reservas y productos desde una vista facil de leer." visual={<DashboardMockup />} />
+        <Feature title="Panel operativo claro" text="Pedidos activos, pagos por validar, cocina, delivery, reservas y productos desde una vista facil de leer." visual={<DashboardMockup />} />
       </div>
     </section>
   );
