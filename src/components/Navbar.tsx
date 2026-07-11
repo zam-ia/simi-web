@@ -16,16 +16,17 @@ export function Navbar() {
           </span>
         </Link>
         <nav className="hidden items-center gap-6 text-sm text-foreground/68 lg:flex">
-          <a href="#producto">Producto</a>
-          <a href="#rubros">Rubros</a>
-          <a href="#precios">Precios</a>
-          <a href="#demo">Demo</a>
+          <Link href="/#producto">Producto</Link>
+          <Link href="/#rubros">Rubros</Link>
+          <Link href="/#precios">Precios</Link>
+          <Link href="/blog">Blog</Link>
+          <Link href="/#demo">Demo</Link>
         </nav>
         <div className="flex items-center gap-2">
           <ThemeToggle />
-          <a href="#demo" className="rounded-full bg-primary px-4 py-2 text-sm font-medium text-white shadow-float transition active:scale-[0.97]">
+          <Link href="/#demo" className="rounded-full bg-primary px-4 py-2 text-sm font-medium text-white shadow-float transition active:scale-[0.97]">
             Quiero mi demo
-          </a>
+          </Link>
         </div>
       </div>
     </header>

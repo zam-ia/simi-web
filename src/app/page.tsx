@@ -11,8 +11,12 @@ import { FAQ } from "@/components/sections/FAQ";
 import { LeadForm } from "@/components/sections/LeadForm";
 import { Footer } from "@/components/sections/Footer";
 import { WhatsAppFab } from "@/components/WhatsAppFab";
+import { BlogHighlights } from "@/components/sections/BlogHighlights";
+import { getPublishedPosts } from "@/lib/blog";
 
-export default function HomePage() {
+export default async function HomePage() {
+  const blogPosts = await getPublishedPosts(3);
+
   return (
     <div className="min-h-screen text-foreground">
       <Navbar />
@@ -25,6 +29,7 @@ export default function HomePage() {
         <Benefits />
         <Rubros />
         <Pricing />
+        <BlogHighlights posts={blogPosts} />
         <FAQ />
         <LeadForm />
       </main>

@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://simi-peru.vercel.app"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://simiperu-web.vercel.app"),
   title: "SIMI | Carta digital para negocios gastronomicos",
   description: "Tu carta digital lista en 48 horas para recibir pedidos por WhatsApp sin reenviar menus ni cambiar tu QR.",
   icons: {
